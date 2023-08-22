@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background: url(https://cdn.pixabay.com/photo/2016/11/22/22/25/abs-1850926_1280.jpg);
+            background-repeat: no-repeat; 
+            background-size: cover;
+            color:white;
+            font-size:28px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            
+        }
+        .left
+        {
+            float:left;
+            margin: 10px;
+            border:solid 2px red;
+        }
+        .left img
+        {
+            display: block;
+            margin:auto;
+        }
+        .left span{
+            margin:0;
+        }
+        .right
+        {
+            flex-direction: row-reverse;
+            margin: 10px;
+            height:42px;
+            border:solid yellow 2px;
+        }
+        .center{
+           border:solid green 2px;
+           padding:12px;
+           width:38%;
+           margin:auto;
+           margin-top: 10px;
+        }
+        span{
+           margin:16px;
+
+        }
+        button{
+            padding: 6px;
+            
+            width: 144px;
+        }
+        .left span{
+           display:block;
+        }
+        .sec1{
+            display:flex;
+            overflow: auto;
+        }
+        .sec2
+        {
+            height:400px;
+            width:700px;
+            border:solid 2px white;
+            margin-left:50px;
+            margin-top: 40px;
+            border-radius: 19px;
+        }
+        .container
+        {
+            width:65%;
+            margin:auto;
+            margin-top:60px;
+        }
+        h5{
+            margin:19px;
+            text-align: center;
+        }
+        input{
+            display: block;
+            margin:7px;
+            padding:9px;
+            width:400px;
+            border-radius: 9px;
+            font-size: 17px;
+            text-align: center;
+        }
+        input.sub
+        {
+            width:425px;
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <section class="sec1">
+        <div class="left">
+            <img src="gym.png" heght="40px" width="100px" alt="gymlogo">
+                  <span>Sree Fitness</span>
+           </div >
+           <div class="center">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Fitness Calculator</span>
+            <span>Contact Us</span>
+           </div>
+           <div class="right">
+            <button>CallUs now</button>
+            <button>Email Us</button>
+           </div>
+    </section >
+     <section class="sec2">
+           <div class="container">
+            <h5>Join the best gym of Delhi now</h5>
+            <input type="text" placeholder="Enter your Name"/>
+            <input type="text" placeholder="Enter your Age"/>
+            <input type="text" placeholder="Enter your Gender"/>
+            <input type="text" placeholder="Enter your Locality"/>
+            <input class="sub" type="submit" value="Submit"/>
+       </div> 
+     </section>  
+      
+</body>
+</html>
